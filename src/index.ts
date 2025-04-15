@@ -5,7 +5,7 @@ import bodyParser from "koa-bodyparser";
 import { useKoaServer } from "routing-controllers";
 import config from "@/config";
 import { errorHandler, responseTransformer } from "@/middlewares";
-
+import { startMcpClient } from "@/services/mcp/ClientService";
 const app = new Koa();
 
 // 配置装饰器控制器
@@ -24,5 +24,7 @@ app.use(responseTransformer);
 app.listen(config.server.port, () => {
   console.log(`服务器运行在 http://localhost:${config.server.port}`);
 });
+
+startMcpClient();
 
 export default app;

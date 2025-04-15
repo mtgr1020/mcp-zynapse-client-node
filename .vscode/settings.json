@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["zynapse"],
+  "cSpell.words": ["modelcontextprotocol", "zynapse"],
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
